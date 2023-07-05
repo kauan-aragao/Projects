@@ -1,0 +1,64 @@
+
+.taskLayout{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--gray-400,);
+    background: var(--gray-500,);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.taskLayout + .taskLayout{
+    margin-top: 0.75rem;
+}
+
+.taskLayout h3{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.normalTask{
+    color: var(--gray-100);
+}
+
+.completedTask{
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.trashButton{
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    border-radius: 0.25rem;
+    line-height: 0;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    transition: color 0.1s;
+}
+
+.trashButton:hover{
+    background: var(--gray-400);
+    color: var(--danger);
+}
+
+.circleButton{
+    background: transparent;
+    border: 0;
+    line-height: 0;
+    cursor: pointer;
+
+    transition: color 0.1s;
+}
+
+
+
+
+
+

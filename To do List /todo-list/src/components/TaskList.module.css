@@ -1,0 +1,99 @@
+
+
+.container{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 46rem;
+}
+
+/* New Task Styles */
+.formTask{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transform:  translateY(-50%);
+}
+
+.formTask input{
+    width: 39.875rem;
+    height: 3.375rem;
+    background: var(--gray-500);
+    border-radius: 8px;
+    padding: 1rem;
+    border: 0;
+    border: 1px solid var(--gray-700);
+    color: var(--gray-300);
+    line-height: 1.4;  
+}
+
+.formTask button[type ='submit']{
+    width: 5.625rem;
+    height: 3.25rem;
+    border-radius: 8px;
+    background: var(--blue-dark);
+    border: 0;
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+
+    transition: background-color 0.1s ;
+}
+
+.formTask input:focus{
+    border-color: var(--purple-dark);
+    color: var(--gray-100);
+}
+
+.formTask button[type ='submit']:hover { 
+    background: var(--blue);
+}
+
+.taskList{
+    width: 46rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.tasksCreated,.completedTasks{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.taskList h2{
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.taskList span{
+    color: var(--gray-200);
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.125rem 0.5rem;
+    background: var(--gray-400);
+    border-radius: 5rem;
+}
+
+.tasksCreated h2{
+    color: var(--blue);
+}
+
+.completedTasks h2{
+    color: var(--purple);
+}
+
+
+
